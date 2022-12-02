@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<!-- Language of the page in english -->
+<html lang="en">
+	<head>
+		<!-- Title of the page + CSS link + FONT link + Responsive Web design -->
+		<title>Luxury Car Rental by Killian DECHAMPS</title>
+		<link rel="website icon" type="png" href="..\..\Images\Logos\Logo1.png">
+		<link rel="stylesheet" href="..\..\Css\Style.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.0/css/all.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+      <script src="..\..\Javascript\Script.js"></script>
+	</head>
+	<body>
+
+		<section class="page">
+         <!-- First line of the navigation bar -->
+
+            <section class="first">
+               <!-- Language choice with a dropdown button -->
+               <div class="language">
+                  <!-- &#xxxx to create the down arrow -->
+                 <button class="language-dropdown">Francais &#9662</button>  
+                    <div class="choice-language">
+                     <!-- Link -->
+                      <a href="..\..\index.html">English</a>
+                      <a href="..\..\HTML\French\PageFR.html">Francais</a>
+                    </div>
+               </div>
+               <!-- Buttons to login or register with link -->
+               <div class="nav-buttons">
+                  <a href="..\..\HTML\English\Login.html"><button class="login">Login</button></a>
+                  <a href="..\..\HTML\English\Register.html"><button class="Sign-UP">Register Now</button></a>
+               </div>
+            </section>
+            <!-- End of the first line of the navigation bar -->
+
+            <!-- Second line of the navigation bar -->
+            <section class="second">
+               <!-- Image with a link when you click on it -->
+               <a href="..\..\index.html"><img class="logo" src="..\..\Images\Logos\Logo.png" alt="Company logo"></a>
+
+               <!-- Main Title of the page -->
+               <h1 class="title"><span class="blue">LUXURY </span><span class="white">CAR </span><span class="red">RENTAL</span></h1>
+
+               <!-- Social networks images with links -->
+               <div class="social-network">
+                  <p class="horizontal"><a href="https://www.instagram.com/?hl=en" target="_blank"><img class="social-logo" src="..\..\Images\Logos\Instagram.png" alt="Instagram logo"></a></p>
+                  <p class="horizontal"><a href="https://www.youtube.com/results?search_query=test+drive+supercars+" target="_blank"><img class="social-logo" src="..\..\Images\Logos\Youtube.png" alt="Youtube logo"></a></p>
+               </div>
+            </section>
+            <!-- End of the second line of the navigation bar -->
+
+
+      <div class="btn">
+         <span class="fas fa-bars"></span>
+      </div>
+      <nav class="sidebar">
+         <div class="text">
+            Menu
+         </div>
+         <ul>
+            <li class="active"><a href="..\..\index.html">Home</a></li>
+            <li>
+               <p class="feat-btn">Brands
+               <span class="fas fa-caret-down two"></span>
+               </p>
+               <ul class="feat-show">
+                  <li><a href="..\..\HTML\English\Brands\Brands.html">Brands</a></li>
+                  <li><a href="..\..\HTML\English\Brands\AstonMartin\AstonMartin.html">Aston Martin</a></li>
+                  <li><a href="..\..\HTML\English\Brands\Bugatti\Bugatti.html">Bugatti</a></li>
+                  <li><a href="..\..\HTML\English\Brands\Ferrari\Ferrari.html">Ferrari</a></li>
+                  <li><a href="..\..\HTML\English\Brands\Lamborghini\Lamborghini.html">Lamborghini</a></li>
+                  <li><a href="..\..\HTML\English\Brands\McLaren\McLaren.html">McLaren</a></li>
+                  <li><a href="..\..\HTML\English\Brands\Porsche\Porsche.html">Porsche</a></li>
+               </ul>
+            </li>
+            <li><a href="..\..\HTML\English\Blog.html">Blog</a></li>
+            <li><a href="..\..\HTML\English\Contact.html">Contact</a></li>
+         </ul>
+      </nav>
+			
+
+			<!-- Start of the header -->
+			<header>
+            <div class="page">
+               <h3 class="Problem">The site is currently being translated</h3>
+            <h5 class="Appologized">We apologize for the inconvenience</h5>
+            </div>
+				
+			</header>
+			<!-- End of the header -->
+
+
+			<!-- Start of the footer of page -->
+			<footer>
+				<!-- Create different columns for the footer page -->
+				<div class="columns">
+					<!-- Each columns has link to other page -->
+					<div class="column">
+						<h2>Links</h2>
+						<p><a href="..\..\index.html"><button>Home</button></a></p>
+						<p><a href="..\..\HTML\English\Register.html"><button>Register</button></a></p>
+						<p><a href="..\..\HTML\English\Login.html"><button>Login</button></a></p>
+					</div>
+					<div class="column">
+						<h2>Informations</h2>
+						<p><a href="..\..\HTML\English\Cookies.html"><button>Cookies</button></a></p>
+						
+					</div>
+					<div class="column">
+						<h2>Need help ?</h2>
+						<p><a href="..\..\HTML\English\Contact.html"><button>Contact us</button></a></p>
+					</div>
+				</div>
+				<h5>Killian DECHAMPS, DCU</h5>
+			</footer>
+			<!-- End of the footer of page -->
+
+
+		</section>
+		<!-- End of the page -->
+
+      <script>
+         $('.btn').click(function(){
+           $(this).toggleClass("click");
+           $('.sidebar').toggleClass("show");
+         });
+           $('.feat-btn').click(function(){
+             $('nav ul .feat-show').toggleClass("show");
+             $('nav ul .first').toggleClass("rotate");
+           });
+           $('.serv-btn').click(function(){
+             $('nav ul .serv-show').toggleClass("show1");
+             $('nav ul .second').toggleClass("rotate");
+           });
+           $('nav ul li').click(function(){
+             $(this).addClass("active").siblings().removeClass("active");
+           });
+      </script>
+	</body>
+</html>
